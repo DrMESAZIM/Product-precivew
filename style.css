@@ -1,0 +1,160 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Montserrat';
+  /* border: 1px dashed black; */
+  text-decoration: none;
+  color: hsl(228, 12%, 48%);
+  font-size: 15px;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  padding-top: max(20px, calc((100vh - 625px) / 2));
+  padding-bottom: max(20px, calc((100vh - 625px) / 2));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 355px;
+}
+
+figure {
+  overflow: hidden;
+  width: inherit;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+img {
+  object-fit:fill;
+  width:inherit;
+}
+
+article {
+  background-color: white;
+  padding: 20px;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 11px;
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a {
+  font-size: inherit;
+  color: inherit;
+}
+
+h1 {
+  font-family: 'Fraunces';
+  color: hsl(212, 21%, 14%);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: small;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price > .new {
+  font-family: 'Fraunces';
+  font-size: xx-large;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  margin-right: 24px;
+}
+
+.price > .old {
+  text-decoration: line-through;
+  font-family: 'Montserrat';
+}
+
+.add-to-cart {
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  transition: 150ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart span {
+  color: inherit
+}
+
+.add-to-cart:hover {
+  background-color: hsl(158, 58%, 14%);
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    padding-top: max(20px, calc((100vh - 450px) / 2));
+    padding-bottom: max(20px, calc((100vh - 450px) / 2));
+  }
+
+  section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 640px;
+    height: 450px;
+  }
+
+  figure {
+    height: inherit;
+    width: 320px;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  article {
+    height: inherit;
+    width: 320px;
+    padding: 30px;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: small;
+    color: hsl(228, 12%, 48%);
+  }
+
+  h1 {
+    margin-right: 20px;
+  }
+}
